@@ -560,7 +560,7 @@ h1 .gradient-text {
 .char-head {
   width: 38px;
   height: 38px;
-  background: #f5c4a0;
+  background: #a56d45;
   border-radius: 50% 50% 45% 45%;
   position: relative;
   margin: 0 auto;
@@ -622,7 +622,7 @@ h1 .gradient-text {
   transform: translateX(-50%);
   width: 12px;
   height: 8px;
-  background: #f5c4a0;
+  background: #a56d45;
   border-radius: 0 0 4px 4px;
 }
 
@@ -651,7 +651,7 @@ h1 .gradient-text {
   transform: translateX(-50%);
   width: 10px;
   height: 10px;
-  background: #f5c4a0;
+  background: #a56d45;
   border-radius: 50%;
 }
 
@@ -1140,4 +1140,222 @@ footer {
 ::-webkit-scrollbar-thumb {
   background: var(--shadow-dark);
   border-radius: 10px;
+}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE — TABLET  (≤ 1024px)
+══════════════════════════════════════════ */
+@media (max-width: 1024px) {
+  /* Hero: reducir gap y padding */
+  #hero {
+    padding: 110px 36px 70px;
+    gap: 40px;
+  }
+
+  /* Illustration frame un poco más pequeño */
+  .portrait-frame {
+    width: 320px;
+    height: 360px;
+  }
+
+  /* Stats: 2 columnas */
+  .stats-strip {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 36px;
+  }
+
+  /* Services: 2 columnas */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Sections padding */
+  section {
+    padding: 70px 36px;
+  }
+
+  .contact-card {
+    padding: 48px 48px;
+  }
+
+  footer {
+    padding: 0 36px 36px;
+  }
+}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE — MOBILE  (≤ 768px)
+══════════════════════════════════════════ */
+@media (max-width: 768px) {
+  /* ── NAV: pill más compacto ── */
+  nav {
+    top: 16px;
+    padding: 8px 8px;
+    gap: 2px;
+    /* Evita que se salga de la pantalla en pantallas muy pequeñas */
+    max-width: calc(100vw - 32px);
+  }
+
+  nav a {
+    font-size: 12px;
+    padding: 7px 13px;
+  }
+
+  /* ── HERO: una sola columna, ilustración arriba ── */
+  #hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    min-height: auto;
+    padding: 100px 24px 60px;
+    gap: 40px;
+    text-align: center;
+  }
+
+  /* Ilustración primero (orden visual) */
+  .hero-right {
+    order: -1;
+  }
+
+  .portrait-frame {
+    width: 280px;
+    height: 310px;
+    margin: 0 auto;
+  }
+
+  /* Centrar elementos del hero-left */
+  .hero-left {
+    align-items: center;
+    gap: 22px;
+  }
+
+  .hero-desc {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-btns {
+    justify-content: center;
+  }
+
+  /* ── STATS: 2 columnas ── */
+  .stats-strip {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 24px;
+    margin-bottom: 60px;
+    gap: 14px;
+  }
+
+  .stat-num {
+    font-size: 30px;
+  }
+
+  /* ── PROYECTOS: tarjetas de ancho completo ── */
+  .cards-grid {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .project-card {
+    max-width: 100%;
+    flex: 1 1 auto;
+  }
+
+  /* ── SERVICIOS: 1 columna ── */
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ── SECCIONES ── */
+  section {
+    padding: 60px 24px;
+  }
+
+  .section-header {
+    margin-bottom: 36px;
+  }
+
+  /* ── CONTACTO ── */
+  .contact-card {
+    padding: 40px 28px;
+  }
+
+  .contact-btns {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .contact-btns .btn-primary,
+  .contact-btns .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    padding: 0 24px 40px;
+  }
+}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE — SMALL MOBILE  (≤ 480px)
+══════════════════════════════════════════ */
+@media (max-width: 480px) {
+  /* NAV: letras aún más pequeñas */
+  nav a {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+
+  /* Hero: ajuste de padding */
+  #hero {
+    padding: 90px 18px 50px;
+    gap: 32px;
+  }
+
+  /* Ilustración */
+  .portrait-frame {
+    width: 240px;
+    height: 270px;
+  }
+
+  /* Stats: 2 columnas más compactas */
+  .stats-strip {
+    padding: 0 18px;
+    gap: 12px;
+  }
+
+  .stat-card {
+    padding: 18px 12px;
+  }
+
+  .stat-num {
+    font-size: 26px;
+  }
+
+  /* Secciones */
+  section {
+    padding: 50px 18px;
+  }
+
+  /* Contacto */
+  .contact-card {
+    padding: 32px 20px;
+    border-radius: 24px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 0 18px 32px;
+  }
+
+  /* Botones hero no tan anchos */
+  .btn-primary,
+  .btn-secondary {
+    padding: 12px 24px;
+    font-size: 13.5px;
+  }
 }
