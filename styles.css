@@ -1183,9 +1183,7 @@ footer {
   }
 }
 
-/* ══════════════════════════════════════════
-   RESPONSIVE — MOBILE  (≤ 768px)
-══════════════════════════════════════════ */
+/*RESPONSIVE — MOBILE  (≤ 768px) */
 @media (max-width: 768px) {
   /* ── NAV: pill más compacto ── */
   nav {
@@ -1237,7 +1235,6 @@ footer {
     justify-content: center;
   }
 
-  /* ── STATS: 2 columnas ── */
   .stats-strip {
     grid-template-columns: repeat(2, 1fr);
     padding: 0 24px;
@@ -1300,29 +1297,23 @@ footer {
   }
 }
 
-/* ══════════════════════════════════════════
-   RESPONSIVE — SMALL MOBILE  (≤ 480px)
-══════════════════════════════════════════ */
+   /*RESPONSIVE — SMALL MOBILE  (≤ 480px)*/
 @media (max-width: 480px) {
-  /* NAV: letras aún más pequeñas */
   nav a {
     font-size: 11px;
     padding: 6px 10px;
   }
 
-  /* Hero: ajuste de padding */
   #hero {
     padding: 90px 18px 50px;
     gap: 32px;
   }
 
-  /* Ilustración */
   .portrait-frame {
     width: 240px;
     height: 270px;
   }
 
-  /* Stats: 2 columnas más compactas */
   .stats-strip {
     padding: 0 18px;
     gap: 12px;
@@ -1336,23 +1327,19 @@ footer {
     font-size: 26px;
   }
 
-  /* Secciones */
   section {
     padding: 50px 18px;
   }
 
-  /* Contacto */
   .contact-card {
     padding: 32px 20px;
     border-radius: 24px;
   }
 
-  /* Footer */
   footer {
     padding: 0 18px 32px;
   }
 
-  /* Botones hero no tan anchos */
   .btn-primary,
   .btn-secondary {
     padding: 12px 24px;
