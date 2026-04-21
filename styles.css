@@ -19,6 +19,11 @@
     10px 10px 24px var(--shadow-dark), -10px -10px 24px var(--shadow-light);
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 *,
 *::before,
 *::after {
@@ -264,6 +269,7 @@ h1 .gradient-text {
   display: flex;
   align-items: center;
   gap: 7px;
+  text-decoration: none;
 }
 
 .btn-secondary:hover {
